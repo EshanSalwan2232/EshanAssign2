@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/eshan_background</item>
+        <item name="colorPrimary">@color/teal</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
 </resources>

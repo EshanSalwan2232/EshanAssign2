@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EshanAssign2">
         <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".PaymentActivity"
             android:exported="false" />
         <activity
@@ -19,11 +22,18 @@
             android:name=".RentActivity"
             android:exported="false" />
         <activity
-            android:name=".EshanActivity"
-            android:exported="false" />
-        <activity
             android:name=".SalwanActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EshanActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
