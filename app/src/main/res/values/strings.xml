@@ -1,4 +1,9 @@
 <!--> Eshan Salwan, n01422232, RNB <-->
 <resources>
     <string name="app_name">EshanSalwan, n01422232</string>
+    <string name="btn">Enter</string>
+    <string name="Description">This app helps its clients to find the best option for a home.</string>
+    <string name="rB1">Apartment</string>
+    <string name="rB2">Detached Home</string>
+    <string name="rB3">Semi-Detached Home</string>
 </resources>

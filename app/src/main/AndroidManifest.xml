@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EshanAssign2">
         <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VisitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RentActivity"
+            android:exported="false" />
+        <activity
             android:name=".EshanActivity"
             android:exported="false" />
         <activity
