@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EshanAssign2">
         <activity
+            android:name=".SemiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetachedActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
