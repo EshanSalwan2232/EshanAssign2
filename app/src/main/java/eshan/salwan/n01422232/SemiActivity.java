@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SemiActivity extends AppCompatActivity {
+public class SemiActivity extends MenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

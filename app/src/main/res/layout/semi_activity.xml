@@ -13,7 +13,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="51dp"
         android:layout_marginEnd="177dp"
-        android:text="@string/textview"
+        android:text="@string/textview3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,34 +25,34 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="114dp"
         android:layout_marginEnd="233dp"
+        android:src="@drawable/semi1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/semiView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="524dp"
-        android:layout_marginEnd="256dp"
+        android:layout_width="184dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="205dp"
+        android:src="@drawable/semi2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/semiView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="316dp"
-        android:layout_marginEnd="246dp"
+        android:layout_width="190dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="205dp"
+        android:src="@drawable/semi3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/semiBox1"
@@ -61,7 +61,7 @@
         android:layout_marginStart="234dp"
         android:layout_marginTop="203dp"
         android:layout_marginEnd="83dp"
-        android:text="@string/cB1"
+        android:text="@string/scheckb1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -73,7 +73,7 @@
         android:layout_marginStart="234dp"
         android:layout_marginTop="596dp"
         android:layout_marginEnd="83dp"
-        android:text="@string/cB2"
+        android:text="@string/scheckb2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -85,7 +85,7 @@
         android:layout_marginStart="234dp"
         android:layout_marginTop="388dp"
         android:layout_marginEnd="83dp"
-        android:text="@string/cB3"
+        android:text="@string/scheckb3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

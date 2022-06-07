@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class DetachedActivity extends AppCompatActivity {
+public class DetachedActivity extends MenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

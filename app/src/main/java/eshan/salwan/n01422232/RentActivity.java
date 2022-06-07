@@ -32,10 +32,10 @@ public class RentActivity extends MenuActivity {
                     Intent aprt = new Intent(RentActivity.this, VisitActivity.class);
                     startActivity(aprt);
                 } else if (rb2.isChecked()) {
-                    Intent detach = new Intent(RentActivity.this, VisitActivity.class);
+                    Intent detach = new Intent(RentActivity.this, DetachedActivity.class);
                     startActivity(detach);
                 } else if (rb3.isChecked()) {
-                    Intent semi = new Intent(RentActivity.this, VisitActivity.class);
+                    Intent semi = new Intent(RentActivity.this, SemiActivity.class);
                     startActivity(semi);
                 }
 
