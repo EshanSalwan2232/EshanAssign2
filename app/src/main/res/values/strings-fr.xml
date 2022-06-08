@@ -1,0 +1,32 @@
+<!--> Eshan Salwan, n01422232, RNB <-->
+<resources>
+    <string name="app_name">EshanSalwan, n01422232</string>
+    <string name="btn">Entrer</string>
+    <string name="Description">Cette application aide ses clients à trouver la meilleure option pour une maison.</string>
+    <string name="rB1">Appartement</string>
+    <string name="rB2">Maison individuelle</string>
+    <string name="rB3">Maison jumelée</string>
+    <string name="help">Aider</string>
+    <string name="rent">Location</string>
+    <string name="home">Maison</string>
+    <string name="textview">Options d\'appartement</string>
+    <string name="cB1">50 Front Street\n Listé pour $549/Mois</string>
+    <string name="cB2">2045 Whitehall Road\n Listé pour $999/Mois</string>
+    <string name="cB3">79 Forest Ave\n Listé pour 1699/Mois</string>
+    <string name="textview3">Options de maison jumelée</string>
+    <string name="textview2">Options de maison individuelle</string>
+    <string name="dcheckb1">26 Rocky Road\n Listé pour $799/Mois</string>
+    <string name="dcheckb2">147 Richlong Street\n Listé pour $1299/Mois</string>
+    <string name="dcheckb3">3 lakehill Road\n Listé pour $2000/Mois</string>
+    <string name="scheckb1">105 Orchard Way\n Listé pour $625/Mois</string>
+    <string name="scheckb2">89 Moss Lane\n Listé pour $1150/Mois</string>
+    <string name="scheckb3">12 Mill Street\n Listé pour 1899/Mois</string>
+    <string name="button1">Paiement</string>
+    <string name="button2">Paiement</string>
+    <string name="button3">Paiement</string>
+    <string name="pay">Informations de facturation</string>
+    <string name="hintname">Nom</string>
+    <string name="email">Adresse e-mail</string>
+    <string name="phone">Numéro de téléphone</string>
+    <string name="credit">Carte de crédit</string>
+</resources>
