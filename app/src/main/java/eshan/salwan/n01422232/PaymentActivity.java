@@ -3,6 +3,9 @@ package eshan.salwan.n01422232;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -18,6 +21,7 @@ public class PaymentActivity extends AppCompatActivity {
     EditText Name;
     EditText Phone;
     EditText Credit;
+    final Context context = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +34,7 @@ public class PaymentActivity extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View arg0) {
+            public void onClick(View view) {
 
                 if(Name.getText().toString().trim().equalsIgnoreCase("")){
                     Name.setError("Enter Name");
@@ -45,12 +49,27 @@ public class PaymentActivity extends AppCompatActivity {
                     Credit.setError("Enter Credit Card Number");
                 }
 
-                AlertDialog.Builder Alert = AlertDialog.Builder(context);
+                AlertDialog.Builder Alert = new AlertDialog.Builder(context);
 
                 Alert
-                        .setTitle("AlertDialog");
-                        .setMesssage("Your request is being processed");
-
+                        .setTitle("AlertDialog")
+                        .setMessage("Your request is being processed")
+                        .setCancelable(false)
+                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent i = new Intent(PaymentActivity.this, SalwanActivity.class);
+                                startActivity(i);
+                            }
+                        })
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog alertDialog = Alert.create();
+                alertDialog.show();
             }
         });
         Name.addTextChangedListener(new TextWatcher() {
