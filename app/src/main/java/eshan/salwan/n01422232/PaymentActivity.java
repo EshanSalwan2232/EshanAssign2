@@ -15,7 +15,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class PaymentActivity extends AppCompatActivity {
+public class PaymentActivity extends MenuActivity {
     EditText email;
     ImageButton done;
     EditText Name;
@@ -35,41 +35,31 @@ public class PaymentActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                if (error()) {
 
-                if(Name.getText().toString().trim().equalsIgnoreCase("")){
-                    Name.setError("Enter Name");
-                }
-                if(email.getText().toString().trim().equalsIgnoreCase("")){
-                    email.setError("Enter Email Address");
-                }
-                if(Phone.getText().toString().trim().equalsIgnoreCase("")){
-                    Phone.setError("Enter Phone Number");
-                }
-                if(Credit.getText().toString().trim().equalsIgnoreCase("")){
-                    Credit.setError("Enter Credit Card Number");
-                }
 
-                AlertDialog.Builder Alert = new AlertDialog.Builder(context);
+                    AlertDialog.Builder Alert = new AlertDialog.Builder(context);
 
-                Alert
-                        .setTitle("AlertDialog")
-                        .setMessage("Your request is being processed")
-                        .setCancelable(false)
-                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent i = new Intent(PaymentActivity.this, SalwanActivity.class);
-                                startActivity(i);
-                            }
-                        })
-                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        });
-                AlertDialog alertDialog = Alert.create();
-                alertDialog.show();
+                    Alert
+                            .setTitle("AlertDialog")
+                            .setMessage("Your request is being processed")
+                            .setCancelable(false)
+                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    Intent i = new Intent(PaymentActivity.this, SalwanActivity.class);
+                                    startActivity(i);
+                                }
+                            })
+                            .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            });
+                    AlertDialog alertDialog = Alert.create();
+                    alertDialog.show();
+                }
             }
         });
         Name.addTextChangedListener(new TextWatcher() {
@@ -96,5 +86,24 @@ public class PaymentActivity extends AppCompatActivity {
                 Credit.setError(null);
             }
         });
+    }
+    private boolean error() {
+        if (Name.getText().toString().trim().equalsIgnoreCase("")) {
+            Name.setError("Enter Name");
+            return false;
+        }
+        if (email.getText().toString().trim().equalsIgnoreCase("")) {
+            email.setError("Enter Email Address");
+            return false;
+        }
+        if (Phone.getText().toString().trim().equalsIgnoreCase("")) {
+            Phone.setError("Enter Phone Number");
+            return false;
+        }
+        if (Credit.getText().toString().trim().equalsIgnoreCase("")) {
+            Credit.setError("Enter Credit Card Number");
+            return false;
+        }
+        return true;
     }
 }
