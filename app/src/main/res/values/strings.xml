@@ -24,4 +24,9 @@
     <string name="button1">Payment</string>
     <string name="button2">Payment</string>
     <string name="button3">Payment</string>
+    <string name="pay">Billing Info</string>
+    <string name="hintname">Name</string>
+    <string name="email">Email Address</string>
+    <string name="phone">Phone Number</string>
+    <string name="credit">Credit Card</string>
 </resources>
