@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_200"
     tools:context=".RentActivity">
 
     <RadioGroup
@@ -49,7 +50,6 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="432dp"
         android:layout_marginEnd="60dp"
-        android:onClick="onVisit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

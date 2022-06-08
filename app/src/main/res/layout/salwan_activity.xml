@@ -5,6 +5,7 @@
     android:id="@+id/eshanMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cream"
     tools:context=".SalwanActivity">
 
     <TextView
@@ -26,7 +27,6 @@
         android:layout_marginTop="568dp"
         android:layout_marginEnd="159dp"
         android:text="@string/btn"
-        android:onClick="Rent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"

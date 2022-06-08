@@ -21,4 +21,7 @@
     <string name="scheckb1">105 Orchard Way\n Listed for @625/Month</string>
     <string name="scheckb2">89 Moss Lane\n Listed for $1150/Month</string>
     <string name="scheckb3">12 Mill Street\n Listed for 1899/Month</string>
+    <string name="button1">Payment</string>
+    <string name="button2">Payment</string>
+    <string name="button3">Payment</string>
 </resources>
